@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+.h2p {
+	background: rgba(0, 0, 0, 0.5);
+	margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 18px;
+	border-collapse: collapse;
+	width: 70%;
+	height: 60%;
+	overflow: scroll;
+}
+.h2p table {
+	border: none;
+}
+.h2p table img{
+	width: 400px;
+}
+.h2p table h2{
+	color: white;
+}
+.h2p table p{
+	color: white;
+	font-size: 15px;
+}
+
+.chars {
+	background: rgba(0, 0, 0, 0.5);
+	margin-left: auto;
+  margin-right: auto;
+	padding: 20px;
+  border-radius: 18px;
+	border-collapse: collapse;
+	width: 70%;
+	height: 55%;
+	overflow: scroll;
+}
+.chars table {
+	border: none;
+}
+.chars table img{
+	width: 200px;
+}
+.chars table h2{
+	color: white;
+}
+.chars table p{
+	color: white;
+	font-size: 15px;
+}
+.chars table td,th{
+	color: white;
+	text-align: center;
+}
+.chars table td{
+	font-size: 15px;
+}
+.chars table th{
+  position: sticky;
+  top: 0;
+}
+
+.rules {
+	background: rgba(0, 0, 0, 0.5);
+	margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 18px;
+	border-collapse: collapse;
+	width: 70%;
+	height: 60%;
+	overflow: scroll;
+}
+.rules table {
+	border: none;
+}
+.rules table img{
+	width: 400px;
+}
+.rules table h2{
+	color: white;
+}
+.rules table p{
+	color: white;
+	font-size: 15px;
+}
+
+.banner{
+	height: 100vh;
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/627/250/541/mobile-legends-fanny-tigreal-alucard-eudora-hd-wallpaper-preview.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.navigation{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 20%;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+.p5{
+	width: 100%;
+	position: absolute;
+	top: 75%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+
+.navigation ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+.navigation ul li:hover:after{
+	content: '';
+	height: 3px;
+	width: 100%;
+	background: #577BDA;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+}
+
+.navigation ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #577BDA;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navigation ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+
+.description{
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.home {
+	margin: 0;
+  text-align: center;
+  padding: 20px;
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+button{
+	width: 150px;
+	padding: 0;
+	text-align: center;
+	border-radius: 15px;
+	font-weight: bold;
+	border: 2px solid #577BDA;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+  bottom: -500px;
+  float: left;
+}
+
+input{
+	width: 150px;
+	height: 35px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	background: none;
+}
+
+span{
+	background: #577BDA;
+	height: 100%;
+	width: 0;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}

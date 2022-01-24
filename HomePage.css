@@ -1,0 +1,124 @@
+.card {
+  display: grid;
+  width: 300px;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 80px;
+  grid-template-areas: "image" "options";
+
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+
+  float: left;
+}
+
+.card-image {
+  grid-area: image;
+}
+.card-image-1 {
+  background: url("https://play-lh.googleusercontent.com/28ZrB-IdK-gKKTmBMgiOspBod0gWmO8L7UDZdtKxSOW90TQNIHcmEdMz4Eza6lKG9JM");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image-2 {
+  background: url("https://media.contentapi.ea.com/content/dam/eacom/SIMS/brand-refresh-assets/images/2019/07/ts4-featured-image-base-refresh.png.adapt.crop191x100.1200w.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image-3 {
+  background: url("https://furypixel.com/wp-content/uploads/2019/04/FuryPixel-Persona-5-The-Royal-Cover.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-about {
+  grid-area: about;
+  margin: 10px;
+}
+
+.card-options {
+  grid-area: options;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 110);
+}
+
+.card-about p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+.card-about h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+
+.card-options .option1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+  padding:10px;
+}
+.option1:hover {
+  background: rgb(100, 7, 110);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  border-bottom-left-radius: 15px;
+}
+
+.card-options .option2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+  padding:10px;
+}
+.option2:hover {
+  background: rgb(100, 7, 110);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.card-options .option3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: white;
+  padding:10px;
+}
+.option3:hover {
+  background: rgb(100, 7, 110);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  border-bottom-right-radius: 15px;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.cardRow {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
